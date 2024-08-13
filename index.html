@@ -14,7 +14,7 @@
     </head>
     <body class="font-poppins ">
         <main class="min-h-screen bg-[#010313] bg-[url(background.png)] bg-no-repeat bg-center">
-            <!-- home section -->
+            <!-- home section --> 
             <section id="home-screen" class="home min-h-screen flex 
             justify-center items-center text-white  ">
                 <div class="flex flex-col items-center gap-8">
@@ -34,13 +34,13 @@
                             <p class="bg-[#010313cc] text-white p-4 rounded-b-xl">Don't watch keyboard  while playing...</p>
                             </div>
                             <div class="flex justify-center items-center h-full">
-                                <p id="current-alphabet" class="text-8xl  font-bold up">Y</p>
+                                <p id="current-alphabet" class="text-8xl  font-bold ">Y</p>
                             </div>
                         </div>
                     </div>
                     <!-- keybord start -->
                     <div>
-                        <div class="my-1 flex w-full justify-center gap-1">
+                        <div class="my-1 flex w-full justify-center gap-1 ">
                             <kbd id="q" class="kbd">q</kbd>
                             <kbd id="w" class="kbd">w</kbd>
                             <kbd id="e" class="kbd">e</kbd>
@@ -52,7 +52,7 @@
                             <kbd id="o" class="kbd">o</kbd>
                             <kbd id="p" class="kbd">p</kbd>
                           </div>
-                          <div class="my-1 flex w-full justify-center gap-1">
+                          <div class="my-1 flex w-full justify-center gap-1 ">
                             <kbd id="a" class="kbd">a</kbd>
                             <kbd id="s" class="kbd">s</kbd>
                             <kbd id="d" class="kbd">d</kbd>
@@ -63,7 +63,7 @@
                             <kbd id="k" class="kbd">k</kbd>
                             <kbd id="l" class="kbd">l</kbd>
                           </div>
-                          <div class="my-1 flex w-full justify-center gap-1">
+                          <div class="my-1 flex w-full justify-center gap-1 ">
                             <kbd id="z" class="kbd">z</kbd>
                             <kbd id="x" class="kbd">x</kbd>
                             <kbd id="c" class="kbd">c</kbd>
@@ -77,26 +77,28 @@
                     <!-- keybord end -->
                     <!-- live score -->
                     <div class="flex justify-between w-3/4">
+                        <!-- display life -->
                         <button class="btn rounded-full border-none text-white p-4 bg-purple-700">
                             Life
                             <i class="fa-regular fa-heart"></i>
-                            <span>1</span>
+                            <span id="curren-life">5</span>
                           </button>
+                          <!-- display score -->
                           <button class="btn rounded-full border-none text-white bg-pink-600">
                             Score
                             <i class="fa-regular fa-heart"></i>
-                            <span>1</span>
+                            <span id="curent-score">0</span>
                           </button>
                     </div>
                 </div>
             </section>
             <!-- play ground end -->
             <!-- score section start -->
-            <section class="score flex justify-center items-center min-h-screen hidden">
+            <section id="final-score" class="flex justify-center items-center min-h-screen hidden">
                 <div class="text-white text-center space-y-4 p-5 bg-white bg-opacity-25 rounded-md">
-                    <h1 class="text-6xl "><span class="font-extrabold">Score:</span> <span>14</span></h1>
+                    <h1 class="text-6xl "><span class="font-extrabold">Score:</span> <span id="game-score">14</span></h1>
 
-                    <button class="btn">play Again</button>
+                    <button onclick="play()" id="play-again" class="btn">play Again</button>
                        
                     <p>Practice will make you Pro</p>
                 </div>
